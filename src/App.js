@@ -9,7 +9,7 @@ function App(){
     return (
         <Routes>
             <Route path="/" element={<LoginPage />} />
-            <Route path="/order" element={<OrderPage />} />
+            <Route path="/order/:username" element={<OrderPage />} /> {/* le : signifie que cette route peut accueillir des variables de manière dynamique */}
             <Route path="*" element={<ErrorPage />} />
         </Routes>
     )
