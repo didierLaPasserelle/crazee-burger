@@ -20,10 +20,24 @@ Ensuite la synchro ascendante en gérant le changement
 */
 
 const LoginPageStyled = styled.div`
-  background: red;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  ::before {
+    content: "";
+    background: url("/images/burger-and-fries-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+  }
 `
