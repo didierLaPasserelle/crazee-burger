@@ -13,10 +13,13 @@ export default function OrderPage() {
   return (
     <OrderPageStyled>
         <div className = "container">
-          <h1>Hello {username}</h1>
-          <Link to="/">
-              <button>Déconnexion</button>
-          </Link>
+          <div className= "navbar">
+            <h1>Hello {username}</h1>
+            <Link to="/">
+                <button>Déconnexion</button>
+            </Link>
+          </div>
+          <div className="main">Main</div>
         </div>
         
     </OrderPageStyled>
@@ -29,10 +32,23 @@ const OrderPageStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   .container{
     background: red;
     height: 95vh;
     width: 1400px;
+    display: flex;
+    flex-direction: column;
+
+    .navbar{
+      background: blue;
+      height: 10vh;
+    }
+
+    .main{
+      background: green;
+      flex: 1; // l'élément va prendre tout le reste de la page. or you can also use : height: calc(95vh - 10vh); 
+    }
   }
 `;
