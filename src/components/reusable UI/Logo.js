@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-export default function Logo() {
+export default function Logo({ className }) {
   return (
-    <LogoStyled>
+    <LogoStyled className={className}>
        <h1>CRAZEE</h1>
        <img src="/images/logo-orange.png" alt=""/>
        <h1>BURGER</h1>
@@ -14,7 +14,6 @@ const LogoStyled = styled.div`
 border: 1px solid blue;
 display: flex;
 align-items: center;
-transform: scale(2.5);
 
 h1{
   display: inline;
