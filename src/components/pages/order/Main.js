@@ -4,7 +4,8 @@ import { theme } from "../../../theme";
 export default function Main() {
   return (
     <MainStyled className="main">
-        
+        <div className="basket">basket</div>
+        <div className="menu">menu</div>
     </MainStyled>
   )
 }
@@ -16,6 +17,17 @@ const MainStyled = styled.div`
   border-bottom-left-radius: ${theme.borderRadius.extraRound};
   border-bottom-right-radius: ${theme.borderRadius.extraRound};
   box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) inset ;
+
+  display: grid; // de base le grid met les éléments les uns sur les autres
+    grid-template-columns: 25% 75%; // ou 1fr (il prend tout le reste de la place)
+
+  .basket{
+    background: pink;
+  }
+
+  .menu{
+    background: green;
+  }
 `;
 
 
