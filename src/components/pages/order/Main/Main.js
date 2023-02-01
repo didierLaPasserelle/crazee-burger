@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../../../theme";
+import { theme } from "../../../../theme";
 
 export default function Main() {
   return (
@@ -19,7 +19,7 @@ const MainStyled = styled.div`
   box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) inset ;
 
   display: grid; // de base le grid met les éléments les uns sur les autres
-    grid-template-columns: 25% 75%; // ou 1fr (il prend tout le reste de la place)
+    grid-template-columns: 25% 75%; // ou 1fr (ça prend tout le reste de la place)
 
   .basket{
     background: pink;
