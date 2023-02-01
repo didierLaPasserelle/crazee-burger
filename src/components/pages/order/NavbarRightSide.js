@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Profile from "./Profile";
 
@@ -6,7 +5,7 @@ export default function NavbarRightSide({ username }) {
   return (
     <NavbarRightSideStyled className="right-side">
         {/*<div className="admin-button">Admin button</div>*/}
-    <Profile />
+    <Profile username={username}/>
       <div className="picture"></div>
     </NavbarRightSideStyled>  )
 }

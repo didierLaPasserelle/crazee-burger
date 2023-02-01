@@ -1,16 +1,21 @@
 import styled from "styled-components";
+import { theme } from "../../../theme";
 
 export default function Main() {
   return (
-    <MainStyled>
-        main
+    <MainStyled className="main">
+        
     </MainStyled>
   )
 }
 
 const MainStyled = styled.div`
-    background: green;
-    flex: 1; // l'élément va prendre tout le reste de la page. or you can also use : height: calc(95vh - 10vh); 
+  background: ${theme.colors.background_white};
+  flex: 1; // l'élément va prendre tout le reste de la page. or you can also use : height: calc(95vh - 10vh); 
+
+  border-bottom-left-radius: ${theme.borderRadius.extraRound};
+  border-bottom-right-radius: ${theme.borderRadius.extraRound};
+  box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) inset ;
 `;
 
 
