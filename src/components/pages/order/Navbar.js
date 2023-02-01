@@ -21,10 +21,7 @@ const NavbarStyled = styled.nav`
 
       .left-side{
         background: pink;
-      }
-
-      .right-side{
-        background: purple;
-      }
+      } 
+    
 `
 ;
