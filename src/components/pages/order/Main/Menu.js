@@ -11,11 +11,11 @@ export default function Menu() {
     <MenuStyled className="menu">
         {menu.map((produit) => {
             return (
-                <Product
-                    title={produit.title}
-                    imageSource={produit.imageSource}
-                    price={produit.price}
-                />
+                <Product {...produit} />
+                    // title={produit.title}
+                    // imageSource={produit.imageSource}
+                    // price={produit.price}
+                
             )
         })}
     </MenuStyled>
@@ -32,19 +32,5 @@ const MenuStyled = styled.div`
     box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) inset ;
 
     
-    .produit{
-        background: red;
-        width: 240px;
-        height: 330px;
-    }
-
-    .image{
-        width: 100px;
-        height: auto
-    }
-
-    img{
-        width: 100%;
-        height: 100%
-    }
+    
 `;
