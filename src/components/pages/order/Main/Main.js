@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import { theme } from "../../../theme";
+import { theme } from "../../../../theme";
+import Menu from "./Menu";
 
 export default function Main() {
   return (
     <MainStyled className="main">
-        
+{/*<div className="basket">basket</div>*/}        
+    <Menu />
     </MainStyled>
   )
 }
@@ -16,6 +18,16 @@ const MainStyled = styled.div`
   border-bottom-left-radius: ${theme.borderRadius.extraRound};
   border-bottom-right-radius: ${theme.borderRadius.extraRound};
   box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) inset ;
+
+  display: grid; // de base le grid met les éléments les uns sur les autres
+  grid-template-columns: 100%; // ou 1fr (ça prend tout le reste de la place)
+
+  overflow-y: scroll; // pour scroller de bas en haut d'où le y
+
+  /* .basket{
+    background: pink;
+  } */
+
 `;
 
 
